@@ -33,7 +33,7 @@ cryptographic tools.
 ./do
 
 %install
-SHORTHOSTNAME=$(echo $HOSTNAME | cut -d. -f1)
+SHORTHOSTNAME=$(echo $HOSTNAME | cut -d. -f1 | sed 's/-//g')
 %ifarch x86_64
 mv build/${SHORTHOSTNAME}/include/amd64/* build/${SHORTHOSTNAME}/include/
 %else
@@ -74,3 +74,10 @@ mv build/$SHORTHOSTNAME/lib %{buildroot}%{_libdir}
 %files -n %{staticname}
 %{_includedir}/nacl/
 %{_libdir}/libnacl.a
+
+
+%changelog
+* Mon Apr 02 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 20110221-1
++ Revision: 788837
+- imported package nacl
+
