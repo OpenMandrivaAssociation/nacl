@@ -3,7 +3,7 @@
 Name:		nacl
 Summary:	Networking and Cryptography library
 Version:	20110221
-Release:	1
+Release:	2
 License:	Public Domain
 Group:		System/Libraries
 URL:		http://nacl.cr.yp.to/
