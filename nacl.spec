@@ -6,7 +6,7 @@ Version:	20110221
 Release:	2
 License:	Public Domain
 Group:		System/Libraries
-URL:		http://nacl.cr.yp.to/
+URL:		https://nacl.cr.yp.to/
 Source0:	http://hyperelliptic.org/nacl/%{name}-%{version}.tar.bz2
 
 %description
